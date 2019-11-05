@@ -1,0 +1,34 @@
+{
+  "name": "arena",
+  "version": "1.0.0",
+  "description": "Networked Multiplayer Game Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build.js && node src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemanticSugar/hackweek2019h2.git"
+  },
+  "author": "Chris Brewer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemanticSugar/hackweek2019h2/issues"
+  },
+  "homepage": "https://github.com/SemanticSugar/hackweek2019h2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "websocket": "^1.0.30"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "eslintify": "^3.1.0",
+    "watchify": "^3.11.1"
+  }
+}
