@@ -20,7 +20,7 @@ function updateBundle() {
     console.log(`Updating public/client.js`);
     writeStream.on('finish',  () => {
         console.log(`...Finished`);
-        if (process.env.NODE_ENV == 'production') {
+        if (process.env.NODE_ENV == 'staging') {
             process.exit()
         }
     });
