@@ -20,7 +20,7 @@ function updateBundle() {
     console.log(`Updating public/client.js`);
     writeStream.on('finish',  () => {
         console.log(`...Finished`);
-        if (process.env.node_env == 'heroku') {
+        if (process.env.NODE_ENV == 'production') {
             process.exit()
         }
     });
