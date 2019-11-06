@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && node build.js && node src/server"
+    "start": "node build.js && forever src/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "eslintify": "^3.1.0",
+    "forever": "^1.0.0",
     "watchify": "^3.11.1"
   }
 }

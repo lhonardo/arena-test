@@ -111,7 +111,7 @@ wsServer.on('request', function(request) {
         // We only handle utf8 encoded json messages.
         if (message.type !== 'utf8') return;
         let action;
-        console.log('Received Message: ' + message.utf8Data);
+        console.log('Received Message: ' + message.utf8Data + sa);
         try {
             action = JSON.parse(message.utf8Data);
         } catch (e) {
